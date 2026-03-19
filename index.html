@@ -358,7 +358,7 @@ footer{background:var(--bg0);border-top:1px solid var(--bdr);padding:2.2rem 5vw;
   <div class="contact-grid">
 
     <!-- Links side -->
-    <div class="reveal">
+    <div class="cf reveal">
       <p class="contact-intro">I'm actively seeking internship opportunities and open to collaborating on meaningful software projects. Whether it's a role, a project idea, or a conversation about tech — I'd love to hear from you.</p>
       <div class="clinks">
         <a href="mailto:chandravankabhargavhilash69@gmail.com" class="cl">
@@ -381,7 +381,7 @@ footer{background:var(--bg0);border-top:1px solid var(--bdr);padding:2.2rem 5vw;
     </div>
 
     <!-- ✅ W3FORMS — sends email directly to your Gmail, NO backend needed -->
-    <form class="cf reveal" id="contactForm" action="https://api.w3forms.com/submit" method="POST">
+    <form class="cf reveal" action="https://api.w3forms.com/submit" method="POST">
 
       <!--
         ════════════════════════════════════════════════════
@@ -391,8 +391,8 @@ footer{background:var(--bg0);border-top:1px solid var(--bdr);padding:2.2rem 5vw;
         STEP 4 → Paste it below replacing YOUR-ACCESS-KEY-HERE
         ════════════════════════════════════════════════════
       -->
-      <input type="hidden" name="access_key"  value="YOUR-ACCESS-KEY-HERE"/>
-      <input type="hidden" name="subject"      value="New Message — Portfolio Contact Form"/>
+      <input type="hidden" name="access_key" value="YOUR-ACCESS-KEY-HERE"/>
+      <input type="hidden" name="subject" value="New Portfolio Message"/>
       <input type="hidden" name="from_name"    value="Portfolio Visitor"/>
       <input type="hidden" name="redirect"     value="false"/>
       <!-- Honeypot: blocks spam bots automatically -->
@@ -410,8 +410,7 @@ footer{background:var(--bg0);border-top:1px solid var(--bdr);padding:2.2rem 5vw;
         <label class="cf-lbl" for="cf-msg">Message</label>
         <textarea id="cf-msg" name="message" placeholder="Tell me about the opportunity or project..." required></textarea>
       </div>
-
-      <button type="submit" id="submitBtn" class="btn btn-sap" style="justify-content:center;width:100%;">
+     <button type="submit" class="btn btn-sapphire" style="justify-content:center;width:100%;">Send Message</button>
         <span id="btnText">Send Message</span>
         <span id="btnLoader" style="display:none;">⏳ Sending…</span>
       </button>
